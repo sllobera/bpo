@@ -12,12 +12,10 @@ interface Props {
 export const Header: FC<Props> = ({ locale }) => {
   const t = useTranslations('')
   return (
-    <div className='mx-auto flex max-w-screen-2xl flex-row items-center justify-between p-5'>
+    <div className='mx-auto flex max-w-screen-2xl flex-row items-center justify-between p-2'>
       <Link lang={locale} href='/'>
         <div className='flex flex-row items-center'>
-          <div className='mb-2 h-14 w-14'>
-            <LogoIcon />
-          </div>
+          <div className='mb-2 h-8 w-14'></div>
           <strong className='mx-2 select-none'>Template</strong>
         </div>
       </Link>
@@ -29,15 +27,13 @@ export const Header: FC<Props> = ({ locale }) => {
           <a href=''>{t('Support')}</a>
           <a href=''>{t('Other')}</a>
         </nav>
-        <ThemeSwitch />
+        {/* <ThemeSwitch />*/}
         <LangSwitcher />
         <a
           href='https://github.com/yahyaparvar/nextjs-template'
           target='_blank'
         >
-          <div className='size-8'>
-            <GithubIcon />
-          </div>
+          <div className='size-8'></div>
         </a>
       </div>
     </div>

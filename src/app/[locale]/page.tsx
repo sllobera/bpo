@@ -5,7 +5,7 @@ export default function DashboardPage() {
   const t = useTranslations('')
   return (
     <div>
-      <section className='flex flex-col items-center justify-center py-24'>
+      {/*} <section className='flex flex-col items-center justify-center py-24'>
         <h1 className='text-center text-7xl font-extrabold leading-tight'>
           {t('An')}{' '}
           <span className='bg-span-bg bg-clip-text text-transparent'>
@@ -37,33 +37,55 @@ export default function DashboardPage() {
             </Button>
           </a>
         </div>
-      </section>
-      <section className='bg-background-secondary py-20 max-lg:py-10'>
-        <div className='mx-auto grid max-w-screen-lg grid-cols-3 gap-7 px-8 py-5 max-lg:max-w-fit max-lg:grid-cols-1 max-lg:gap-10'>
-          <div className='text-center'>
-            <h2 className='mb-3  text-xl font-semibold'>{t('Approachable')}</h2>
-            <p className='text-text-secondary max-lg:max-w-[500px]'>
-              {t(
-                'Add_components_without_sending_additional_client_side_JavaScript_Built_on_the_latest_React_features'
-              )}
-            </p>
+      </section>*/}
+      <section className='bg-background-secondary'>
+        <div className='relative isolate overflow-hidden bg-gray-900'>
+          <div className='px-6 py-24 sm:px-6 sm:py-32 lg:px-8'>
+            <div className='mx-auto max-w-2xl text-center'>
+              <h2 className='text-3xl font-bold tracking-tight text-white sm:text-4xl'>
+                Boost your productivity.
+                <br />
+                Start using our app today.
+              </h2>
+              <p className='mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300'>
+                Incididunt sint fugiat pariatur cupidatat consectetur sit cillum
+                anim id veniam aliqua proident excepteur commodo do ea.
+              </p>
+              <div className='mt-10 flex items-center justify-center gap-x-6'>
+                <a
+                  href='#'
+                  className='rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white'
+                >
+                  Get started
+                </a>
+                <a
+                  href='#'
+                  className='text-sm font-semibold leading-6 text-white'
+                >
+                  Learn more <span aria-hidden='true'>→</span>
+                </a>
+              </div>
+            </div>
           </div>
-          <div className='text-center'>
-            <h2 className='mb-3 text-xl font-semibold'>{t('Versatile')}</h2>
-            <p className='text-text-secondary max-lg:max-w-[500px]'>
-              {t(
-                'Automatic_Image_Font_and_Script_Optimizations_for_improved_UX_and_Core_Web_Vitals'
-              )}
-            </p>
-          </div>
-          <div className='text-center'>
-            <h2 className='mb-3 text-xl font-semibold'>{t('Performant')}</h2>
-            <p className='text-text-secondary max-lg:max-w-[500px]'>
-              {t(
-                'A_rich_incredibly_adoptable_template_that_scales_between_a_small_showcase_website_and_a_full_size_app'
-              )}
-            </p>
-          </div>
+          <svg
+            viewBox='0 0 1024 1024'
+            aria-hidden='true'
+            className='absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]'
+          >
+            <circle
+              r={512}
+              cx={512}
+              cy={512}
+              fill='url(#8d958450-c69f-4251-94bc-4e091a323369)'
+              fillOpacity='0.7'
+            />
+            <defs>
+              <radialGradient id='8d958450-c69f-4251-94bc-4e091a323369'>
+                <stop stopColor='#7775D6' />
+                <stop offset={1} stopColor='#E935C1' />
+              </radialGradient>
+            </defs>
+          </svg>
         </div>
       </section>
     </div>
