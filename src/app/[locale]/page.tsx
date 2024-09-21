@@ -33,7 +33,7 @@ export default function DashboardPage() {
                   decoding='async'
                   data-nimg='1'
                   className='mr-2'
-                  src='/assets/icon_Phone.svg'
+                  src='/icon_Phone.svg'
                 />
                 <p className='call-text font-ProximaNovaBold'>
                   CALL 1800 784 772
@@ -49,10 +49,201 @@ export default function DashboardPage() {
                   decoding='async'
                   data-nimg='1'
                   className='mr-2'
-                  src='/assets/icon_schedule_call.svg'
+                  src='/icon_schedule_call.svg'
                 />
                 <p className='font-ProximaNovaBold'>SCHEDULE A CALL</p>
               </button>
+            </div>
+          </div>
+          <div className='mb-8 mt-4'>
+            <div className='px:2 flex w-full max-w-md items-center rounded-2xl bg-white py-2 text-left shadow-lg sm:px-6 sm:py-4'>
+              <a
+                href='https://www.trustpilot.com/review/iselect.com.au'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='mr-0 mt-2 w-3/4 text-center text-lg sm:mr-4'
+              >
+                <div className='flex flex-col items-center'>
+                  <div>
+                    <div className='flex items-center'>
+                      <div className='relative mr-1 h-8 w-8'>
+                        <svg
+                          width='32'
+                          height='32'
+                          viewBox='0 0 40 40'
+                          fill='none'
+                          xmlns='http://www.w3.org/2000/svg'
+                          className='absolute'
+                        >
+                          <path d='M40 0H0V40H40V0Z' fill='#E0E0E0'></path>
+                          <path
+                            d='M19.9995 26.9581L26.0828 25.4164L28.6245 33.2497L19.9995 26.9581ZM33.9995 16.8331H23.2911L19.9995 6.74974L16.7078 16.8331H5.99946L14.6661 23.0831L11.3745 33.1664L20.0411 26.9164L25.3745 23.0831L33.9995 16.8331Z'
+                            fill='white'
+                          ></path>
+                        </svg>
+                        <div className='absolute left-0 top-0 overflow-hidden'>
+                          <svg
+                            width='32'
+                            height='32'
+                            viewBox='0 0 40 40'
+                            fill='none'
+                            xmlns='http://www.w3.org/2000/svg'
+                          >
+                            <path d='M40 0H0V40H40V0Z' fill='#219653'></path>
+                            <path
+                              d='M19.9995 26.9581L26.0828 25.4164L28.6245 33.2497L19.9995 26.9581ZM33.9995 16.8331H23.2911L19.9995 6.74974L16.7078 16.8331H5.99946L14.6661 23.0831L11.3745 33.1664L20.0411 26.9164L25.3745 23.0831L33.9995 16.8331Z'
+                              fill='white'
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div className='relative mr-1 h-8 w-8'>
+                        <svg
+                          width='32'
+                          height='32'
+                          viewBox='0 0 40 40'
+                          fill='none'
+                          xmlns='http://www.w3.org/2000/svg'
+                          className='absolute'
+                        >
+                          <path d='M40 0H0V40H40V0Z' fill='#E0E0E0'></path>
+                          <path
+                            d='M19.9995 26.9581L26.0828 25.4164L28.6245 33.2497L19.9995 26.9581ZM33.9995 16.8331H23.2911L19.9995 6.74974L16.7078 16.8331H5.99946L14.6661 23.0831L11.3745 33.1664L20.0411 26.9164L25.3745 23.0831L33.9995 16.8331Z'
+                            fill='white'
+                          ></path>
+                        </svg>
+                        <div className='absolute left-0 top-0 overflow-hidden'>
+                          <svg
+                            width='32'
+                            height='32'
+                            viewBox='0 0 40 40'
+                            fill='none'
+                            xmlns='http://www.w3.org/2000/svg'
+                          >
+                            <path d='M40 0H0V40H40V0Z' fill='#219653'></path>
+                            <path
+                              d='M19.9995 26.9581L26.0828 25.4164L28.6245 33.2497L19.9995 26.9581ZM33.9995 16.8331H23.2911L19.9995 6.74974L16.7078 16.8331H5.99946L14.6661 23.0831L11.3745 33.1664L20.0411 26.9164L25.3745 23.0831L33.9995 16.8331Z'
+                              fill='white'
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div className='relative mr-1 h-8 w-8'>
+                        <svg
+                          width='32'
+                          height='32'
+                          viewBox='0 0 40 40'
+                          fill='none'
+                          xmlns='http://www.w3.org/2000/svg'
+                          className='absolute'
+                        >
+                          <path d='M40 0H0V40H40V0Z' fill='#E0E0E0'></path>
+                          <path
+                            d='M19.9995 26.9581L26.0828 25.4164L28.6245 33.2497L19.9995 26.9581ZM33.9995 16.8331H23.2911L19.9995 6.74974L16.7078 16.8331H5.99946L14.6661 23.0831L11.3745 33.1664L20.0411 26.9164L25.3745 23.0831L33.9995 16.8331Z'
+                            fill='white'
+                          ></path>
+                        </svg>
+                        <div className='absolute left-0 top-0 overflow-hidden'>
+                          <svg
+                            width='32'
+                            height='32'
+                            viewBox='0 0 40 40'
+                            fill='none'
+                            xmlns='http://www.w3.org/2000/svg'
+                          >
+                            <path d='M40 0H0V40H40V0Z' fill='#219653'></path>
+                            <path
+                              d='M19.9995 26.9581L26.0828 25.4164L28.6245 33.2497L19.9995 26.9581ZM33.9995 16.8331H23.2911L19.9995 6.74974L16.7078 16.8331H5.99946L14.6661 23.0831L11.3745 33.1664L20.0411 26.9164L25.3745 23.0831L33.9995 16.8331Z'
+                              fill='white'
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div className='relative mr-1 h-8 w-8'>
+                        <svg
+                          width='32'
+                          height='32'
+                          viewBox='0 0 40 40'
+                          fill='none'
+                          xmlns='http://www.w3.org/2000/svg'
+                          className='absolute'
+                        >
+                          <path d='M40 0H0V40H40V0Z' fill='#E0E0E0'></path>
+                          <path
+                            d='M19.9995 26.9581L26.0828 25.4164L28.6245 33.2497L19.9995 26.9581ZM33.9995 16.8331H23.2911L19.9995 6.74974L16.7078 16.8331H5.99946L14.6661 23.0831L11.3745 33.1664L20.0411 26.9164L25.3745 23.0831L33.9995 16.8331Z'
+                            fill='white'
+                          ></path>
+                        </svg>
+                        <div className='absolute left-0 top-0 overflow-hidden'>
+                          <svg
+                            width='32'
+                            height='32'
+                            viewBox='0 0 40 40'
+                            fill='none'
+                            xmlns='http://www.w3.org/2000/svg'
+                          >
+                            <path d='M40 0H0V40H40V0Z' fill='#219653'></path>
+                            <path
+                              d='M19.9995 26.9581L26.0828 25.4164L28.6245 33.2497L19.9995 26.9581ZM33.9995 16.8331H23.2911L19.9995 6.74974L16.7078 16.8331H5.99946L14.6661 23.0831L11.3745 33.1664L20.0411 26.9164L25.3745 23.0831L33.9995 16.8331Z'
+                              fill='white'
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div className='relative mr-1 h-8 w-8'>
+                        <svg
+                          width='32'
+                          height='32'
+                          viewBox='0 0 40 40'
+                          fill='none'
+                          xmlns='http://www.w3.org/2000/svg'
+                          className='absolute'
+                        >
+                          <path d='M40 0H0V40H40V0Z' fill='#E0E0E0'></path>
+                          <path
+                            d='M19.9995 26.9581L26.0828 25.4164L28.6245 33.2497L19.9995 26.9581ZM33.9995 16.8331H23.2911L19.9995 6.74974L16.7078 16.8331H5.99946L14.6661 23.0831L11.3745 33.1664L20.0411 26.9164L25.3745 23.0831L33.9995 16.8331Z'
+                            fill='white'
+                          ></path>
+                        </svg>
+                        <div className='absolute left-0 top-0 overflow-hidden'>
+                          <svg
+                            width='32'
+                            height='32'
+                            viewBox='0 0 40 40'
+                            fill='none'
+                            xmlns='http://www.w3.org/2000/svg'
+                          >
+                            <path d='M40 0H0V40H40V0Z' fill='#219653'></path>
+                            <path
+                              d='M19.9995 26.9581L26.0828 25.4164L28.6245 33.2497L19.9995 26.9581ZM33.9995 16.8331H23.2911L19.9995 6.74974L16.7078 16.8331H5.99946L14.6661 23.0831L11.3745 33.1664L20.0411 26.9164L25.3745 23.0831L33.9995 16.8331Z'
+                              fill='white'
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='flex justify-center'>
+                  <p className='text-secondary'>
+                    <span className='text-lg font-bold sm:text-xl'>4.6</span>
+                    <span className='ml-2 text-sm'>
+                      Based on <b className='underline'>3902 reviews</b>
+                    </span>
+                  </p>
+                </div>
+              </a>
+              <div className='h-14 w-[2px] bg-gray-200'></div>
+              <img
+                alt='Logo'
+                loading='lazy'
+                width='94'
+                height='16'
+                decoding='async'
+                data-nimg='1'
+                className='xl2:ml-8 m-2 w-1/4 sm:ml-8 md:ml-8 lg:ml-8 xl:ml-8'
+                src='/logo_trustpoilot.svg'
+              />
             </div>
           </div>
         </div>
