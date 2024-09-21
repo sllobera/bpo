@@ -11,8 +11,8 @@ export default function DashboardPage() {
                 COMPARE OUTSOURCING
               </h1>
               <p className='font-ProximaNova mb-4 text-lg leading-6 text-white'>
-                We've been saving Aussies time, effort and money comparing a
-                range of Australia's health funds{' '}
+                We&lsquo;ve been saving Aussies time, effort and money comparing
+                a range of Australia&lsquo;s health funds{' '}
                 <span className='font-bold'>for over 20 years</span>
               </p>
               <button className='font-Toroka rounded-custom-tl-br inline-flex w-auto items-center justify-center rounded-[15px_5px_15px_5px] bg-white p-[5px] px-2 py-[14px] text-[20px] font-normal leading-4 leading-normal text-primary transition-colors duration-300 sm:px-8 sm:text-2xl'>
