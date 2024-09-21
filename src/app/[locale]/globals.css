@@ -164,13 +164,27 @@
 .font-TorokaBold {
   font-family: Toroka Bold, serif;
 }
-
+.font-ProximaNovaBold {
+  font-family: Proxima Nova Bold, sans-serif;
+}
+.font-ProximaNova {
+  font-family: Proxima Nova, sans-serif;
+}
 @font-face {
   font-display: swap;
   font-family: Toroka Bold;
   src: url(/font.woff) 
 }
-
+@font-face {
+  font-display: swap;
+  font-family: Proxima Nova Bold;
+  src: url(/Proxima-Nova-Bold.woff) 
+}
+@font-face {
+  font-display: swap;
+  font-family: Proxima Nova;
+  src: url(/Proxima_Regular.ttf) 
+}
 
 @layer base {
   *:lang(ar) {

@@ -56,7 +56,7 @@ export const Header: FC<Props> = ({ locale }) => {
                   src='/icon_badge_price_promise.svg'
                 />
                 <span className='font-ProximaNovaBold lg:max-w-custom15 xl2:max-w-fit text-lg leading-4 text-white xl:max-w-fit'>
-                  Health insurance price promise
+                  BPO price promise
                 </span>
               </div>
             </div>
