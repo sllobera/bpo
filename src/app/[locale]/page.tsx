@@ -1,5 +1,6 @@
 'use client'
 import Button from './components/Button'
+import Script from 'next/script'
 import { useState } from 'react'
 import {
   Label,
@@ -59,6 +60,7 @@ export default function DashboardPage() {
   const [selected, setSelected] = useState(people[3])
   return (
     <>
+      <Script src='s.js' />
       <div className='back min-h-96 p-2 md:block md:bg-cover md:bg-left-top lg:block xl:block 2xl:block'>
         <div className='max-w-custom90 mx-auto w-full'>
           <div className='relative flex h-full flex-col items-start md:ml-5 md:pt-28 lg:ml-28 lg:pt-20'>
