@@ -14,6 +14,13 @@ import {
   QuestionMarkCircleIcon
 } from '@heroicons/react/20/solid'
 
+const steps = [
+  { name: 'Step 1', href: '#', status: 'complete' },
+  { name: 'Step 2', href: '#', status: 'complete' },
+  { name: 'Step 3', href: '#', status: 'current' },
+  { name: 'Step 4', href: '#', status: 'upcoming' },
+  { name: 'Step 5', href: '#', status: 'upcoming' }
+]
 const people = [
   { id: 1, name: 'Select sector...' },
   { id: 2, name: 'Advertising' },
@@ -45,15 +52,18 @@ const people = [
   { id: 28, name: 'Travel' },
   { id: 29, name: 'Other sector' }
 ]
+function classNames(...classes: any[]) {
+  return classes.filter(Boolean).join(' ')
+}
 export default function DashboardPage() {
   const [selected, setSelected] = useState(people[3])
   return (
     <>
-      <div className='back min-h-96 p-5 md:block md:bg-cover md:bg-left-top lg:block xl:block 2xl:block'>
+      <div className='back min-h-96 p-2 md:block md:bg-cover md:bg-left-top lg:block xl:block 2xl:block'>
         <div className='max-w-custom90 mx-auto w-full'>
           <div className='relative flex h-full flex-col items-start md:ml-5 md:pt-28 lg:ml-28 lg:pt-20'>
             <div className='rounded-tl-custom5 rounded-t-md bg-secondary'>
-              <div className='rounded-tl-custom5 rounded-br-custom5 relative w-full max-w-md rounded-t-md bg-primary p-10 text-center shadow-lg'>
+              <div className='rounded-tl-custom5 rounded-br-custom5 relative w-full max-w-md rounded-t-md bg-primary p-6 text-center shadow-lg lg:p-10'>
                 <h1 className='font-TorokaBold mb-4 text-[40px] leading-9 text-white'>
                   COMPARE OUTSOURCING
                 </h1>

@@ -17,7 +17,7 @@ export const Header: FC<Props> = ({ locale }) => {
         <div className='relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
           <div className='flex h-16 items-center justify-between'>
             <div className='flex w-full justify-center gap-5 overflow-x-hidden overflow-y-hidden'>
-              <div className='mr-8 flex flex-shrink-0 items-center justify-center space-x-2'>
+              <div className='mr-8 flex hidden flex-shrink-0 items-center justify-center space-x-2 lg:flex'>
                 <img
                   alt='No additional cost to you'
                   loading='lazy'
@@ -27,11 +27,11 @@ export const Header: FC<Props> = ({ locale }) => {
                   data-nimg='1'
                   src='/icon_circle_dollar.svg'
                 />
-                <span className='font-ProximaNovaBold lg:max-w-custom15 xl2:max-w-fit text-lg leading-4 text-white xl:max-w-fit'>
+                <span className='font-ProximaNovaBold lg:max-w-custom15 xl2:max-w-fit text-lg leading-4 text-white xl:max-w-fit '>
                   No additional cost to you
                 </span>
               </div>
-              <div className='mr-8 flex flex-shrink-0 items-center justify-center space-x-2'>
+              <div className='ml-10 mr-8 flex  flex-shrink-0 items-center justify-center space-x-2 lg:flex '>
                 <img
                   alt='We save you hours of research'
                   loading='lazy'
@@ -45,7 +45,7 @@ export const Header: FC<Props> = ({ locale }) => {
                   We save you hours of research
                 </span>
               </div>
-              <div className='mr-8 flex flex-shrink-0 items-center justify-center space-x-2'>
+              <div className='mr-8 flex hidden flex-shrink-0 items-center justify-center space-x-2 lg:flex'>
                 <img
                   alt='Health insurance price promise'
                   loading='lazy'
