@@ -14,7 +14,7 @@ import {
   ChevronUpDownIcon,
   QuestionMarkCircleIcon
 } from '@heroicons/react/20/solid'
-import { Stage1, Stage2 } from './stage'
+import { Stage1, Stage2, Stage3 } from './stage'
 
 
 
@@ -42,7 +42,7 @@ export default function DashboardPage() {
                 {selected == 0 ? <Stage1 stateChanger={setSelect} /> : ""}
 
                 {selected == 1 ? <Stage2 stateChanger={setSelect} /> : ""}
-
+                {selected == 2 ? <Stage3 stateChanger={setSelect} /> : ""}
 
 
               </div>
