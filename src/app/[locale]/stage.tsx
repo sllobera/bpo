@@ -9,11 +9,11 @@ const steps = [
     { name: 'Step 4', href: '#', status: 'upcoming' },
     { name: 'Step 5', href: '#', status: 'upcoming' }
 ]
-const countries = [{ id: 0, name: 'Preferred country..' },
+const countries = [{ id: 0, name: 'Preferred Location..' },
 { id: 1, name: 'Vietnam' },
 { id: 2, name: 'India' },
 { id: 3, name: 'Philippines' },
-{ id: 4, name: 'Sri Lanka' }, { id: 5, name: 'Bangladesh' }, { id: 6, name: 'Other' },
+{ id: 4, name: 'Sri Lanka' }, { id: 5, name: 'Bangladesh' }, { id: 6, name: 'No preference' },
 ]
 const people = [
     { id: 1, name: 'Select sector...' },
@@ -132,7 +132,7 @@ export function Stage2({ stateChanger, ...rest }: any) {
 
 
     const [selected, setSelected] = useState(countries[0])
-
+    const [option, setOption] = useState(0)
     return (
 
         <><nav aria-label="Progress">
@@ -224,11 +224,49 @@ export function Stage2({ stateChanger, ...rest }: any) {
                         </ListboxOptions>
                     </div>
                 </Listbox>
-                <div>
+                <div><p className='font-ProximaNova mb-4 text-sm leading-6 text-white text-left'>No. of roles you need..
+                </p>
+
                     <span className="isolate inline-flex rounded-md shadow-sm">
-                        <button type="button" className="relative inline-flex items-center rounded-l-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10">Years</button>
-                        <button type="button" className="relative -ml-px inline-flex items-center bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10">Months</button>
-                        <button type="button" className="relative -ml-px inline-flex items-center rounded-r-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10">Days</button>
+                        <button type="button" onClick={() => { option == 1 ? setOption(0) : setOption(1) }} className={classNames(option == 1 ? "relative rounded-l-md -ml-px inline-flex items-center font-ProximaNovaBold items-center gap-x-1.5 bg-indigo-600 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" :
+                            "inline-flex rounded-l-md font-ProximaNovaBold  w-full bg-white text-gray-800 gap-x-1.5  bg-indigo-600 px-2.5 py-2 text-sm font-semibold  shadow-sm hover:bg-indigo-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600")} >
+                            {option == 1 ? <svg className="-ml-0.5 h-3 w-3" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                            </svg> : ""}
+                            1
+                        </button>
+                        <button type="button" onClick={() => { option == 2 ? setOption(0) : setOption(2) }} className={classNames(option == 2 ? "relative -ml-px inline-flex items-center font-ProximaNovaBold items-center gap-x-1.5 bg-indigo-600 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" :
+                            "inline-flex font-ProximaNovaBold  w-full bg-white text-gray-800 gap-x-1.5  bg-indigo-600 px-2.5 py-2 text-sm font-semibold  shadow-sm hover:bg-indigo-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600")} >
+                            {option == 2 ? <svg className="-ml-0.5 h-3 w-3" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                            </svg> : ""}
+                            2
+                        </button>  <button type="button" onClick={() => { option == 3 ? setOption(0) : setOption(3) }} className={classNames(option == 3 ? "relative -ml-px inline-flex items-center font-ProximaNovaBold items-center gap-x-1.5 bg-indigo-600 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" :
+                            "inline-flex font-ProximaNovaBold  w-full bg-white text-gray-800 gap-x-1.5  bg-indigo-600 px-2.5 py-2 text-sm font-semibold  shadow-sm hover:bg-indigo-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600")} >
+                            {option == 3 ? <svg className="-ml-0.5 h-3 w-3" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                            </svg> : ""}
+                            3
+                        </button>
+                        <button type="button" onClick={() => { option == 4 ? setOption(0) : setOption(4) }} className={classNames(option == 4 ? "relative -ml-px inline-flex items-center font-ProximaNovaBold items-center gap-x-1.5 bg-indigo-600 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" :
+                            "inline-flex font-ProximaNovaBold  w-full bg-white text-gray-800 gap-x-1.5  bg-indigo-600 px-2.5 py-2 text-sm font-semibold  shadow-sm hover:bg-indigo-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600")} >
+                            {option == 4 ? <svg className="-ml-0.5 h-3 w-3" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                            </svg> : ""}
+                            4
+                        </button><button type="button" onClick={() => { option == 5 ? setOption(0) : setOption(5) }} className={classNames(option == 5 ? "relative -ml-px inline-flex items-center font-ProximaNovaBold items-center gap-x-1.5 bg-indigo-600 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" :
+                            "inline-flex font-ProximaNovaBold  w-full bg-white text-gray-800 gap-x-1.5  bg-indigo-600 px-2.5 py-2 text-sm font-semibold  shadow-sm hover:bg-indigo-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600")} >
+                            {option == 5 ? <svg className="-ml-0.5 h-3 w-3" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                            </svg> : ""}
+                            5
+                        </button><button type="button" onClick={() => { option == 6 ? setOption(0) : setOption(6) }} className={classNames(option == 6 ? "relative rounded-r-md -ml-px inline-flex items-center font-ProximaNovaBold items-center gap-x-1.5 bg-indigo-600 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" :
+                            "inline-flex font-ProximaNovaBold  w-full bg-white text-gray-800 gap-x-1.5 rounded-r-md bg-indigo-600 px-2.5 py-2 text-sm font-semibold  shadow-sm hover:bg-indigo-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600")} >
+                            {option == 6 ? <svg className="-ml-0.5 h-3 w-3" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                            </svg> : ""}
+                            6+
+                        </button>
                     </span>
                 </div>
             </div>
