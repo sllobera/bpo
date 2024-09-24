@@ -103,21 +103,21 @@ export function Stage1({ stateChanger, ...rest }: any) {
                 <div>
                     <div className='relative mb-5 mt-2 rounded-md shadow-sm w-full'>
                         <button type="button" onClick={() => { option == 1 ? setOption(0) : setOption(1) }} className={classNames(option == 1 ? "inline-flex w-full font-ProximaNovaBold items-center gap-x-1.5 rounded-md bg-indigo-600 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" :
-                            "inline-flex font-ProximaNovaBold  w-full bg-white text-gray-800 gap-x-1.5 rounded-md bg-indigo-600 px-2.5 py-1.5 text-sm font-semibold  shadow-sm hover:bg-indigo-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600")} >
+                            "inline-flex font-ProximaNovaBold  w-full bg-white text-gray-800 gap-x-1.5 rounded-md bg-indigo-600 px-2.5 py-1.5 text-xs font-semibold  shadow-sm hover:bg-indigo-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600")} >
                             {option == 1 ? <svg className="-ml-0.5 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
                             </svg> : ""}
-                            New - I want to fill a new role
+                            New - I need a new outsourced team member
                         </button>
 
                     </div>
                     <div className='relative mb-5 mt-2 rounded-md shadow-sm w-full'>
                         <button type="button" onClick={() => { option == 2 ? setOption(0) : setOption(2) }} className={classNames(option == 2 ? "inline-flex w-full font-ProximaNovaBold items-center gap-x-1.5 rounded-md bg-indigo-600 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" :
-                            "inline-flex font-ProximaNovaBold  w-full bg-white text-gray-800 gap-x-1.5 rounded-md bg-indigo-600 px-2.5 py-1.5 text-sm font-semibold  shadow-sm hover:bg-indigo-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600")} >
+                            "inline-flex font-ProximaNovaBold  w-full bg-white text-gray-800 gap-x-1.5 rounded-md bg-indigo-600 px-2.5 py-1.5 text-xs font-semibold  shadow-sm hover:bg-indigo-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600")} >
                             {option == 2 ? <svg className="-ml-0.5 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
                             </svg> : ""}
-                            Existing - I want to replace an existing  role
+                            Existing -I want to replace an existing outsourced team member
                         </button>
 
                     </div>

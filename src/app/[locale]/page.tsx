@@ -62,7 +62,7 @@ export default function DashboardPage() {
                     src='/icon_Phone.svg'
                   />
                   <p className='call-text font-ProximaNovaBold'>
-                    CALL 1800 784 772
+                    CALL 1800 406 101
                   </p>
                 </a>
                 <div className='mb-[12px] mt-[18px] inline-block w-px bg-gray-500'></div>
