@@ -77,7 +77,7 @@ export default function DashboardPage() {
                     className='mr-2'
                     src='/icon_schedule_call.svg'
                   />
-                  <p className='font-ProximaNovaBold'>SCHEDULE A CALL</p>
+                  <p className='font-ProximaNovaBold'><a href="https://calendly.com/d/ckq7-r38-6g8/one-off-meeting?month=2024-09">SCHEDULE A CALL</a></p>
                 </button>
               </div>
             </div>
