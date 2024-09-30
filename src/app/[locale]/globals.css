@@ -20,6 +20,7 @@
     --span-bg: linear-gradient(to right, #4e4e9e, #097fa5, #3e87ed);
 
   }
+
   .dark {
     --primary: #d6deff;
     --secondary: #0ba6d1;
@@ -36,6 +37,7 @@
     --logo-body: #097fa5;
     --span-bg: linear-gradient(to right, #8c00ff, #0fb4e1, #a1d930, #ae0000);
   }
+
   .sunset {
     --primary: #ff6b6b;
     --secondary: #ff9966;
@@ -52,6 +54,7 @@
     --logo-body: #ff6b6b;
     --span-bg: linear-gradient(to right, #ff6b6b, #ff9966, #ffcc66);
   }
+
   .instagram {
     --primary: #cc3f7e;
     --secondary: #fcb045;
@@ -68,6 +71,7 @@
     --logo-body: #cc3f7e;
     --span-bg: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
   }
+
   .facebook {
     --primary: #3b5998;
     --secondary: #4267b2;
@@ -84,6 +88,7 @@
     --logo-body: #3b5998;
     --span-bg: linear-gradient(to right, #3b5998, #4267b2, #5578c2);
   }
+
   .discord {
     --primary: #7289da;
     --secondary: #7289da;
@@ -100,6 +105,7 @@
     --logo-body: #7289da;
     --span-bg: linear-gradient(to right, #7289da, #7289da, #7289da);
   }
+
   .netflix {
     --primary: #ff0000;
     --secondary: #ffffff;
@@ -116,6 +122,7 @@
     --logo-body: #ff0000;
     --span-bg: linear-gradient(to right, #ff0000, #ff0000, #ff0000);
   }
+
   .reddit {
     --primary: #ff4500;
     --secondary: #ff6347;
@@ -132,6 +139,7 @@
     --logo-body: #ff4500;
     --span-bg: linear-gradient(to right, #ff4500, #ff6347, #ff4500);
   }
+
   .twilight {
     --primary: #a296e0;
     --secondary: #d84c21;
@@ -149,6 +157,7 @@
     --span-bg: linear-gradient(to right, #8d82c4, #f7b7a3, #7d9dbf);
   }
 }
+
 .max-w-custom90 {
   max-width: 90rem;
 }
@@ -157,6 +166,7 @@
 .rounded-tl-custom5 {
   border-top-left-radius: 5rem;
 }
+
 .rounded-br-custom5 {
   border-bottom-right-radius: 5rem;
 }
@@ -164,47 +174,57 @@
 .font-TorokaBold {
   font-family: Toroka Bold, serif;
 }
+
 .font-ProximaNovaBold {
   font-family: Proxima Nova Bold, sans-serif;
 }
+
 .font-ProximaNova {
   font-family: Proxima Nova, sans-serif;
 }
+
 .font-Toroka {
   font-family: Toroka, serif;
 }
+
 .text-disclaimerColor {
   --tw-text-opacity: 1;
   color: rgb(115 115 115 / var(--tw-text-opacity));
 }
+
 @font-face {
   font-display: swap;
   font-family: Toroka;
-  src: url(/toro.woff) 
+  src: url(/toro.woff)
 }
+
 @font-face {
   font-display: swap;
   font-family: Toroka Bold;
-  src: url(/font.woff) 
+  src: url(/font.woff)
 }
+
 @font-face {
   font-display: swap;
   font-family: Proxima Nova Bold;
-  src: url(/Proxima-Nova-Bold.woff) 
+  src: url(/Proxima-Nova-Bold.woff)
 }
+
 @font-face {
   font-display: swap;
   font-family: Proxima Nova;
-  src: url(/Proxima_Regular.ttf) 
+  src: url(/Proxima_Regular.ttf)
 }
 
 @layer base {
   *:lang(ar) {
     font-family: var(--rubik) !important;
   }
+
   *:lang(fa) {
     font-family: var(--rubik) !important;
   }
+
   div::selection,
   h1::selection,
   button::selection,
@@ -216,8 +236,88 @@
     text-shadow: rgb(0, 102, 255) 0px 0px 7px;
     color: rgb(248, 28, 229);
   }
+
   body {
     @apply bg-background text-primary;
   }
 }
-.back{background-image: url('https://vcdn1-english.vnecdn.net/2023/01/12/28691663378132r680x408-1673536-5057-1369-1673536513.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=VzUlubnqonhguZYffPBmyw')}
+
+.back {
+  background-image: url('https://bestarion.com/wp-content/uploads/2021/11/16.jpg')
+}
+
+.health_address_error {
+  color: #ffffff !important;
+  text-align: center;
+  background-color: #d93900;
+}
+
+.hero-preposition {
+  padding: 0 0 0 0 !important;
+}
+
+@media (max-width: 767px) {
+  .hero-preposition {
+    padding: 24px 0 0 0 !important;
+  }
+
+  #health-hero-banner {
+    background-image: url('https://bestarion.com/wp-content/uploads/2021/11/16.jpg') !important;
+  }
+
+  .banner-container {
+    padding: 180px 16px 0px 16px !important;
+  }
+
+  .preposition-list-item {
+    color: #ffffff !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #health-hero-banner {
+    background-image: url('https://bestarion.com/wp-content/uploads/2021/11/16.jpg')
+  }
+
+  .preposition-list-item {
+    color: #ffffff !important;
+  }
+}
+
+.health_address_error {
+  color: #ffffff !important;
+  text-align: center;
+  background-color: #d93900;
+}
+
+.hero-preposition {
+  padding: 0 0 0 0 !important;
+}
+
+@media (max-width: 767px) {
+  .hero-preposition {
+    padding: 24px 0 0 0 !important;
+  }
+
+  #health-hero-banner {
+    background-image: url('https://bestarion.com/wp-content/uploads/2021/11/16.jpg')
+  }
+
+  .banner-container {
+    padding: 180px 16px 0px 16px !important;
+  }
+
+  .preposition-list-item {
+    color: #ffffff !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #health-hero-banner {
+    background-image: url('https://bestarion.com/wp-content/uploads/2021/11/16.jpg')
+  }
+
+  .preposition-list-item {
+    color: #ffffff !important;
+  }
+}
